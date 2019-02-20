@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Assets Tracker</string>
+    <string name="notification_text">Tracking, tap to cancel</string>
+    <string name="notification_channel_id">my_test_channel_id</string>
+    <string name="transport_id" translatable="false">2</string>
+    <string name="firebase_path" translatable="false">locations</string>
+    <string name="firebase_email" translatable="false">artjja@inbox.lv</string>
+    <string name="firebase_password" translatable="false">test123</string>
+</resources>
