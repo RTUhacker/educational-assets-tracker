@@ -17,8 +17,9 @@
 const moment = require('moment-timezone');
 
 const DATE_FORMAT = 'YYYYMMDD HH:mm:ss';
-const SIMULATION_START = '2017-05-17 06:00';
-const SIMULATION_END = '2017-05-19 18:00';
+const SIMULATION_START = '2019-04-01 06:30';
+const SIMULATION_END = '2019-04-02 18:00';
+const SPEED_MULTIPLIER = 2;
 
 // HeartBeat generates a stream of updates to `timeRef`, with either
 // simulated time updates, or real time updates, depending on the
@@ -42,7 +43,10 @@ exports.HeartBeat = class {
         display: this.simulationTime.format('h:mm A, MMM Do'),
         moment: this.simulationTime.valueOf()
       });
-      this.simulationTime = this.simulationTime.add(30, 'seconds');
+      this.simulationTime = this.simulationTime.add(
+        30 * SPEED_MULTIPLIER,
+        'seconds'
+      );
       if (this.simulationTime.diff(this.endOfSimulation, 'minutes') > 0) {
         // Reset simulation to start once we run out of bus trips.
         this.simulationTime = moment.utc(SIMULATION_START, DATE_FORMAT);
