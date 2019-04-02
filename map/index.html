@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transport Tracker</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <span class="io-bus-tracker">Transport Tracker</span>
+      <span class="display-time">6:00 AM, Apr 1st</span>
+      <span class="google-maps-apis"></span>
+    </div>
+    <div id="map"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="js/index_example.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=geometry"
+    ></script>
+  </body>
+</html>

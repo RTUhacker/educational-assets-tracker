@@ -1,0 +1,37 @@
+{
+  "name": "transport-tracker-server",
+  "version": "1.0.0",
+  "description": "The backend component of the Transport Tracker",
+  "scripts": {
+    "main": "node main.js",
+    "debug": "node --debug-brk main.js",
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha -- -R spec",
+    "generate_paths": "node generate_paths.js",
+    "prettier": "for file in *.js test/*.js; do prettier --write --single-quote --bracket-spacing=false $file; done",
+    "typings": "typings install",
+    "check-updates": "npm-check-updates -u -a && npm install"
+  },
+  "dependencies": {
+    "@google/maps": "^0.5.5",
+    "@mapbox/polyline": "^1.0.0",
+    "asyncawait": "^1.0.8",
+    "bluebird": "^3.5.3",
+    "csv-parse": "^4.3.4",
+    "firebase-admin": "^7.2.0",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.23",
+    "sqlite3": "^4.0.6"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.10.2",
+    "mocha": "^6.0.2",
+    "npm-check-updates": "^3.1.3",
+    "prettier": "^1.16.4",
+    "typescript": "^3.4.1",
+    "typings": "^2.1.1"
+  }
+}
