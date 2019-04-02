@@ -2,11 +2,11 @@
 
 This is educational project that tracks assets in real time. Applications is designed to track a range of moving assets (such as vehicles) and visualize them on a live map. The applications use a mixture of technologies.
 
-Note: This application implements asset tracking. For use in a production environment, you therefore need a Google Maps APIs Premium Plan license. For more information, see the Google Maps APIs terms of service.
+Note: This application implements asset tracking. For use in a production environment, you therefore need a [Google Maps APIs Premium Plan license](https://developers.google.com/maps/pricing-and-plans/). For more information, see the [Google Maps APIs terms of service](https://developers.google.com/maps/terms#section_10_4).
 
 # Overview
 
-The repository consists of a number of components, representing the individual moving parts of the bus tracking system. It includes an Android app, in /android, that's installed on Android devices and deployed on the tracked vehicles. There is /backend, written in Node.js, which receives the locations reported by the Android app, along with a time table provided in GTFS format, and makes regular updates to a Firebase Real Time Database. The client in /map receives the updates from the Firebase database and draws them.
+The repository consists of a number of components, representing the individual moving parts of the bus tracking system. It includes an Android app, in `/Android Client`, that's installed on Android devices and deployed on the tracked vehicles. There is `/backend`, written in Node.js, which receives the locations reported by the Android app, along with a time table provided in GTFS format, and makes regular updates to a Firebase Real Time Database. The client in `/map` receives the updates from the Firebase database and draws them.
 
 # Directories in this repo
 
