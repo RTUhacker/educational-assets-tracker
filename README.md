@@ -28,6 +28,6 @@ The public web interface that displays asset locations.
 
 To get started with this project you should have **[Node.js](https://nodejs.org/en/)** and **NPM** (Node's package manager) installed.
 
-In each of subdirectories(`/android`, `/backend`, `/map`) you will find instructions on how to setup each component.
+In each of subdirectories(`/Android Client`, `/backend`, `/map`) you will find instructions on how to setup each component.
 
 Note: **[Node-gyp](https://github.com/nodejs/node-gyp)** might be needed for compiling native addon modules for Node.js in `/backend` subdirectory.
