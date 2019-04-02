@@ -1,7 +1,0 @@
-{
-    "scripts": {
-        "backend": "cd ./backend && npm run main",
-        "map": "cd ./map && npm run main",
-        "admin": ""
-    }
-}

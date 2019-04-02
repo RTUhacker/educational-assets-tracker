@@ -10,12 +10,6 @@
     "check-updates": "npm-check-updates -u -a && npm install",
     "tsc": "tsc --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/googlemaps/transport-tracker.git"
-  },
-  "author": "Brett Morgan <brettmorgan@google.com>",
-  "license": "Apache-2.0",
   "dependencies": {},
   "devDependencies": {
     "babel-eslint": "^7.2.3",

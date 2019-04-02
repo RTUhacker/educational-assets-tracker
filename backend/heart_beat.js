@@ -19,7 +19,7 @@ const moment = require('moment-timezone');
 const DATE_FORMAT = 'YYYYMMDD HH:mm:ss';
 const SIMULATION_START = '2019-04-01 06:30';
 const SIMULATION_END = '2019-04-02 18:00';
-const SPEED_MULTIPLIER = 2;
+const SPEED_MULTIPLIER = 0.5;
 
 // HeartBeat generates a stream of updates to `timeRef`, with either
 // simulated time updates, or real time updates, depending on the
