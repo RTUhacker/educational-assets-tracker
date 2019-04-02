@@ -31,3 +31,6 @@ To get started with this project you should have **[Node.js](https://nodejs.org/
 In each of subdirectories(`/Android Client`, `/backend`, `/map`) you will find instructions on how to setup each component.
 
 Note: **[Node-gyp](https://github.com/nodejs/node-gyp)** might be needed for compiling native addon modules for Node.js in `/backend` subdirectory.
+
+While developing and testing, there is no need in `/Android Client`.
+Everything can be done with the help of `/backend` subdirectory and `simulation`(check `/backend` README.md) option which determines whether to use the vehicle simulator or real location data from the vehicle locator. If you set this value to true you can ignore the `/Android Client` subdirectory for now and use only `/backend` and `/map`.
